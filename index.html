@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Lucia Munoz Larreta | PWA</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/css.css" />
+  </head>
+
+  <body>
+    <div class="cuerpo">
+      <div class="fondo-negro">
+        <nav class="navbar bg-navegacion navbar-expand bg-body-tertiary">
+          <div class="container-fluid justify-content-center">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Buscador</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="seccion/favoritos.html">Favoritos</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="container">
+          <div class="container-fluid">
+            <div class="row justify-content-center">
+              <img class="img-fluid" src="img/logo.png" alt="LuFlix" />
+            </div>
+          </div>
+        </div>
+        <h1>Buscador de Peliculas</h1>
+        <div>
+          <p class="intro">
+            ¡Bienvenido a nuestro buscador de películas! Aquí podrás encontrar
+            toda la información que necesitas sobre tus películas favoritas.
+          </p>
+          <div id="status-box" style="display: none">
+            <div class="container justify-content-center mt-5">
+              <div class="alert alert-danger text-center" role="alert">
+                <h2 class="alert-heading" id="status">Status</h2>
+                <img
+                  src="img/conexion.png"
+                  alt="meme llorando en el suelo"
+                  class="img-fluid"
+                  id="img-conexion"
+                />
+                <div id="juego">
+                  <p>Peroo....</p>
+                  <p>Te juego un juego... jeje</p>
+                  <div id="tablero"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form class="form-buscador">
+            <label for="pelicula">Nombre de la película:</label>
+            <input
+              class="buscador"
+              type="text"
+              id="inputBusqueda"
+              placeholder="Ingresar Pelicula"
+              name="pelicula"
+            />
+            <button class="buscador" id="buscar" type="submit">Buscar</button>
+          </form>
+
+          <div class="row justify-content-center">
+            <div class="loadingio-spinner-ball-kh985bd4vqb">
+              <div class="ldio-z1vi919r5"></div>
+            </div>
+
+            <div class="container">
+              <div class="container-fluid m-2">
+                <div class="row" id="resultado"></div>
+              </div>
+            </div>
+
+            <script src="js/buscador.js"></script>
+            <script src="js/registrarSW.js"></script>
+            <script src="js/status.js"></script>
+            <script src="js/juego.js"></script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

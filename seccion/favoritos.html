@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Lucia Munoz Larreta | PWA</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" type="image/png" href="../img/favicon.png" sizes="32x32" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../styles/css.css" />
+  </head>
+
+  <body>
+    <div class="cuerpo">
+      <div class="fondo-negro">
+        <nav class="navbar bg-navegacion navbar-expand bg-body-tertiary">
+          <div class="container-fluid justify-content-center">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Buscador</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="favoritos.html">Favoritos</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <main>
+          <h1>Mis Favoritos</h1>
+          <div>
+            <p class="intro">
+              Mira la información de tus peliculas favoritas. Ahora tambien,
+              tenes la opcion de ver sus trailers.
+            </p>
+          </div>
+          <div id="status"></div>
+
+          <div class="container">
+            <div class="container-fluid m-2">
+              <div class="row" id="seccion-favoritos"></div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script src="../js/buscador.js"></script>
+    <script src="../js/favoritos.js"></script>
+    <script src="../js/registrarSW.js"></script>
+    <script src="../js/status.js"></script>
+  </body>
+</html>
